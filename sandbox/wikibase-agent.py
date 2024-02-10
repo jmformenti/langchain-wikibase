@@ -130,7 +130,7 @@ def load_prompt_file(full_path):
 def answer_the_question(question, final_answer):
 
   if 'OPENAI_API_URL' in os.environ:
-      llm = OpenAI(openai_api_base=os.environ['OPENAI_API_URL'],
+      llm = OpenAI(openai_api_base=os.environ['OPENAI_API_BASE'],
             openai_api_key="dummy",
             temperature=0,
             top_p=0,
